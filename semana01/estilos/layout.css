@@ -1,11 +1,11 @@
 body {
     display: grid;
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-rows: auto 1fr 80px;
     grid-template-areas:
-        "header header header"
-        "nav main aside"
-        "footer footer footer";
+        "header header"
+        "main aside"
+        "footer  footer";
     margin: 0;
     font-family: 'Segoe UI', system-ui, sans-serif;
     min-height: 100vh;
@@ -23,17 +23,20 @@ footer {
 
 header {
     grid-area: header;
+    flex-direction: column;
     background-color: #8ecae6;
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 2rem;
     font-weight: bold;
 }
 
 nav {
-    grid-area: nav;
     background-color: #c9a0dc;
+    margin: 0 -16px -16px -16px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    
 }
 
 main {
@@ -68,8 +71,8 @@ footer {
 
 ul {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: space-around;
     list-style: none;
     margin: 8px 0 0 0;
     padding: 0;
