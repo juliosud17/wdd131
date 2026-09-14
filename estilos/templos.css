@@ -48,10 +48,15 @@ header {
     content: "✕";
 }
 
+nav {
+    display: flex;
+}
+
 .navegacao {
     list-style: none;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .navegacao a {
