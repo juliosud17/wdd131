@@ -1,0 +1,26 @@
+/* visualização mais larga ************************************************ */
+@media (min-width: 37.5em) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navegacao {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navegacao a {
+        display: block;
+        padding: 0.25rem 0;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
