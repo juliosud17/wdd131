@@ -10,6 +10,10 @@
         display: none;
     }
 
+    nav {
+        margin-right: 2rem;
+    }
+
     .navegacao {
         flex-direction: row;
         gap: 1rem;
@@ -22,5 +26,10 @@
 
     .galeria {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
