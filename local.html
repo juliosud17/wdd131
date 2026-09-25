@@ -9,7 +9,8 @@
     <link rel="icon" href="data:,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=account_balance,air,call,chat,cloud,device_thermostat,groups,language,map,payments,schedule,thermostat&display=block" rel="stylesheet">
     <link rel="stylesheet" href="estilos/local.css">
     <script src="scripts/local.js" defer></script>
 </head>
@@ -20,7 +21,7 @@
     <main>
         <picture class="principal">
             <source media="(min-width: 800px)"
-                    srcset="imagens/local/sevilha-media.webp 1000w, imagens/local/sevilha-grande.webp 1600w"
+                    srcset="imagens/local/sevilha-media.webp 1000w, imagens/local/sevilha-grande.webp 1536w"
                     sizes="100vw">
             <img src="imagens/local/sevilha-pequena.webp"
                  alt="Plaza de España, em Sevilha, com a torre refletida no canal sob céu parcialmente nublado"
@@ -30,21 +31,21 @@
         <section class="dados">
             <h2>Dados</h2>
             <dl>
-                <dt>Área:</dt>
+                <dt><span class="icone" aria-hidden="true">map</span>Área:</dt>
                 <dd>505.990 km²</dd>
-                <dt>População:</dt>
+                <dt><span class="icone" aria-hidden="true">groups</span>População:</dt>
                 <dd>48,6 milhões</dd>
-                <dt>Capital:</dt>
+                <dt><span class="icone" aria-hidden="true">account_balance</span>Capital:</dt>
                 <dd>Madri</dd>
-                <dt>Idiomas:</dt>
+                <dt><span class="icone" aria-hidden="true">chat</span>Idiomas:</dt>
                 <dd>Espanhol, catalão, galego, basco</dd>
-                <dt>Moeda:</dt>
+                <dt><span class="icone" aria-hidden="true">payments</span>Moeda:</dt>
                 <dd>Euro (€)</dd>
-                <dt>Fuso horário:</dt>
+                <dt><span class="icone" aria-hidden="true">schedule</span>Fuso horário:</dt>
                 <dd>UTC+1</dd>
-                <dt>Código telefônico:</dt>
+                <dt><span class="icone" aria-hidden="true">call</span>Código telefônico:</dt>
                 <dd>+34</dd>
-                <dt>Domínio de internet:</dt>
+                <dt><span class="icone" aria-hidden="true">language</span>Domínio de internet:</dt>
                 <dd>.es</dd>
             </dl>
         </section>
@@ -53,21 +54,20 @@
             <h2>Clima</h2>
             <img src="imagens/local/clima.svg" alt="Ícone de sol entre nuvens" class="icone-clima" width="64" height="64">
             <dl>
-                <dt>Temperatura:</dt>
+                <dt><span class="icone" aria-hidden="true">thermostat</span>Temperatura:</dt>
                 <dd>8 °C</dd>
-                <dt>Condições:</dt>
+                <dt><span class="icone" aria-hidden="true">cloud</span>Condições:</dt>
                 <dd>Parcialmente nublado</dd>
-                <dt>Vento:</dt>
+                <dt><span class="icone" aria-hidden="true">air</span>Vento:</dt>
                 <dd>12 km/h</dd>
-                <dt>Sensação térmica:</dt>
+                <dt><span class="icone" aria-hidden="true">device_thermostat</span>Sensação térmica:</dt>
                 <dd id="sensacao-termica">N/A</dd>
             </dl>
         </section>
     </main>
     <footer>
         <p>&copy;<span id="anoatual"></span> | Júlio César Moreira Antunes | Espanha</p>
-        <p>Última modificação: <span id="ultimaModificacao"></span></p>
-        <p class="credito">Foto: Taisia Karaseva no Unsplash</p>
+        <p class="detalhes">Última modificação: <span id="ultimaModificacao"></span> | Foto: Taisia Karaseva no Unsplash</p>
     </footer>
 </body>
 </html>
