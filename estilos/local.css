@@ -1,0 +1,149 @@
+/* Variáveis globais: cores da bandeira da Espanha */
+:root {
+    --cor-vermelha: #aa151b;
+    --cor-amarela: #f1bf00;
+    --cor-texto: #1f1f1f;
+    --cor-fundo: #ffffff;
+    --cor-borda: #e6e6e6;
+    --fundo-card: rgba(255, 255, 255, 0.9);
+    --fonte: "Nunito Sans", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+/* Cabeçalho com faixa amarela, lembrando a bandeira */
+header {
+    background-color: var(--cor-vermelha);
+    border-bottom: 1rem solid var(--cor-amarela);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+/* Imagem principal */
+.principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Seções Dados e Clima (visualização móvel: empilhadas) */
+.dados,
+.clima {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.dados {
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+h2 {
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+}
+
+.icone-clima {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Lista de rótulo/valor em duas colunas */
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.75rem;
+    margin: 0;
+}
+
+dt {
+    font-weight: 700;
+    text-align: right;
+}
+
+dd {
+    margin: 0;
+    text-align: left;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-vermelha);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+.credito {
+    font-size: 0.85rem;
+}
+
+
+/* Visualização mais ampla: cards sobre a imagem */
+@media (min-width: 800px) {
+    main {
+        position: relative;
+    }
+
+    .dados,
+    .clima {
+        position: absolute;
+        width: 20rem;
+        padding: 0 0 1rem;
+        background-color: var(--fundo-card);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        border-bottom: none;
+    }
+
+    .dados {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .clima {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    h2 {
+        background-color: var(--cor-vermelha);
+        color: #ffffff;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    /* No desktop o SVG some e o emoji entra via pseudoelemento */
+    .icone-clima {
+        display: none;
+    }
+
+    .clima h2::after {
+        content: " ⛅";
+    }
+
+    dl {
+        grid-template-columns: auto 1fr;
+        padding: 0 1rem;
+        font-size: 0.95rem;
+    }
+}

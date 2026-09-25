@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espanha | Página do País</title>
+    <meta name="description" content="Página sobre a Espanha com dados gerais do país e informações do clima em Sevilha.">
+    <meta name="author" content="Júlio César Moreira Antunes">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Espanha</h1>
+    </header>
+    <main>
+        <picture class="principal">
+            <source media="(min-width: 800px)"
+                    srcset="imagens/local/sevilha-media.webp 1000w, imagens/local/sevilha-grande.webp 1600w"
+                    sizes="100vw">
+            <img src="imagens/local/sevilha-pequena.webp"
+                 alt="Plaza de España, em Sevilha, com a torre refletida no canal sob céu parcialmente nublado"
+                 width="600" height="800">
+        </picture>
+
+        <section class="dados">
+            <h2>Dados</h2>
+            <dl>
+                <dt>Área:</dt>
+                <dd>505.990 km²</dd>
+                <dt>População:</dt>
+                <dd>48,6 milhões</dd>
+                <dt>Capital:</dt>
+                <dd>Madri</dd>
+                <dt>Idiomas:</dt>
+                <dd>Espanhol, catalão, galego, basco</dd>
+                <dt>Moeda:</dt>
+                <dd>Euro (€)</dd>
+                <dt>Fuso horário:</dt>
+                <dd>UTC+1</dd>
+                <dt>Código telefônico:</dt>
+                <dd>+34</dd>
+                <dt>Domínio de internet:</dt>
+                <dd>.es</dd>
+            </dl>
+        </section>
+
+        <section class="clima">
+            <h2>Clima</h2>
+            <img src="imagens/local/clima.svg" alt="Ícone de sol entre nuvens" class="icone-clima" width="64" height="64">
+            <dl>
+                <dt>Temperatura:</dt>
+                <dd>8 °C</dd>
+                <dt>Condições:</dt>
+                <dd>Parcialmente nublado</dd>
+                <dt>Vento:</dt>
+                <dd>12 km/h</dd>
+                <dt>Sensação térmica:</dt>
+                <dd id="sensacao-termica">N/A</dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="anoatual"></span> | Júlio César Moreira Antunes | Espanha</p>
+        <p>Última modificação: <span id="ultimaModificacao"></span></p>
+        <p class="credito">Foto: Taisia Karaseva no Unsplash</p>
+    </footer>
+</body>
+</html>
