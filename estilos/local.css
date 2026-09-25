@@ -1,13 +1,19 @@
 /* Variáveis globais: cores inspiradas na bandeira da Espanha */
 :root {
+    /* Todas as cores em hexadecimal. Com 8 dígitos (#RRGGBBAA),
+       os dois últimos definem a opacidade: 00 = invisível, ff = sólido */
     --cor-vinho: #7a1017;
     --cor-vinho-escuro: #5a0b10;
     --cor-dourada: #e0b43a;
+    --cor-dourada-transparente: #e0b43a00;
     --cor-texto: #2a2a2a;
+    --cor-texto-claro: #ffffff;
+    --cor-texto-detalhe: #f0d9da;
     --cor-fundo: #ffffff;
-    --cor-linha: rgba(122, 16, 23, 0.15);
-    --fundo-icone: rgba(122, 16, 23, 0.08);
-    --fundo-card: rgba(255, 255, 255, 0.82);
+    --cor-linha: #7a101726;
+    --fundo-icone: #7a101714;
+    --fundo-card: #ffffffd1;
+    --cor-sombra: #0000004d;
     --fonte-texto: "Nunito Sans", Arial, sans-serif;
     --fonte-titulo: "Crimson Pro", Georgia, serif;
 }
@@ -33,7 +39,7 @@ header {
 
 h1 {
     margin: 0;
-    color: #ffffff;
+    color: var(--cor-texto-claro);
     font-family: var(--fonte-titulo);
     font-size: 2.6rem;
 }
@@ -51,11 +57,11 @@ h1::after {
 
 /* Gradiente: a linha some na ponta de fora e fica sólida perto do título */
 h1::before {
-    background: linear-gradient(to right, transparent, var(--cor-dourada));
+    background: linear-gradient(to right, var(--cor-dourada-transparente), var(--cor-dourada));
 }
 
 h1::after {
-    background: linear-gradient(to left, transparent, var(--cor-dourada));
+    background: linear-gradient(to left, var(--cor-dourada-transparente), var(--cor-dourada));
 }
 
 /* Imagem principal */
@@ -145,7 +151,7 @@ dl > :nth-last-child(-n + 2) {
 footer {
     background: linear-gradient(90deg, var(--cor-vinho-escuro), var(--cor-vinho), var(--cor-vinho-escuro));
     border-top: 3px solid var(--cor-dourada);
-    color: #ffffff;
+    color: var(--cor-texto-claro);
     text-align: center;
     padding: 0.75rem 1rem;
     font-family: var(--fonte-titulo);
@@ -159,7 +165,7 @@ footer p {
 .detalhes {
     font-family: var(--fonte-texto);
     font-size: 0.8rem;
-    color: #f0d9da;
+    color: var(--cor-texto-detalhe);
 }
 
 
@@ -193,7 +199,7 @@ footer p {
         background-color: var(--fundo-card);
         backdrop-filter: blur(6px);
         border-radius: 1.25rem;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 24px var(--cor-sombra);
         border-bottom: none;
         text-align: left;
     }
@@ -227,7 +233,7 @@ footer p {
         text-align: center;
         border-radius: 50%;
         background-color: var(--cor-vinho);
-        color: #ffffff;
+        color: var(--cor-texto-claro);
     }
 
     .dados h2::after {
