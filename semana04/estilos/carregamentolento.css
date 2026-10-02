@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: #f7f7f7;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: #000000;
+
+}
+
+img {
+    width: 100%;
+    display: block;
+    animation: fadeIn 3s;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
