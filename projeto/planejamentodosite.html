@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Desculpas | Planejamento do Site</title>
+    <meta name="description" content="Documento de planejamento do site Zero Desculpas: nome, finalidade, cenários, esquema de cores, tipografia e wireframes.">
+    <meta name="author" content="Júlio César Moreira Antunes">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/planejamento.css">
+    <script src="../scripts/obterdatas.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="rotulo">Documento de planejamento</p>
+        <h1>Zero Desculpas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Nome do Site</h2>
+            <p class="destaque">Zero Desculpas</p>
+            <p>A escolha do nome foi definida de acordo com o que as pessoas mais costumam fazer: dar desculpas para elas mesmas. Não importa o quão corrida seja a rotina, desculpas, principalmente para você mesmo, não devem ser uma opção. Quando eu era jovem, aprendi com um professor que "desculpas, por mais que sejam válidas, enfraquecem o caráter."</p>
+        </section>
+
+        <section>
+            <h2>Finalidade do Site</h2>
+            <p>Site criado para ajudar a criar hábitos diários, montar treinos para iniciantes e definir metas, com controle básico de finanças como extra.</p>
+        </section>
+
+        <section>
+            <h2>Cenários</h2>
+            <ul>
+                <li>Como eu consigo criar um acompanhamento de hábitos diários?</li>
+                <li>Como eu faço para montar um treino para iniciantes?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Esquema de Cores</h2>
+            <ul class="cores">
+                <li><span class="amostra fundo"></span><strong>Fundo</strong> <code>#0f0f0f</code> — fundo da página</li>
+                <li><span class="amostra superficie"></span><strong>Superfície</strong> <code>#1a1a1a</code> — cartões, menu e campos de formulário</li>
+                <li><span class="amostra texto"></span><strong>Texto</strong> <code>#ffffff</code> — títulos e textos principais</li>
+                <li><span class="amostra secundario"></span><strong>Texto secundário</strong> <code>#9ca3af</code> — rótulos, legendas e descrições</li>
+                <li><span class="amostra verde"></span><strong>Destaque verde</strong> <code>#10b981</code> — links, botões, item ativo do menu e valores positivos</li>
+                <li><span class="amostra vermelho"></span><strong>Alerta vermelho</strong> <code>#ef4444</code> — sequência quebrada e erros de formulário</li>
+                <li><span class="amostra laranja"></span><strong>Laranja</strong> <code>#f97316</code> — sequência de dias</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tipografia</h2>
+            <div class="fonte">
+                <p class="exemplo-oswald">Oswald</p>
+                <p>Títulos, itens do menu e rótulos em caixa alta.</p>
+            </div>
+            <div class="fonte">
+                <p class="exemplo-inter">Inter</p>
+                <p>Corpo de texto, formulários e botões.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            <p>Página inicial: no celular, o menu fica recolhido e os cartões aparecem empilhados; em telas largas, o menu fica em linha e os cartões ficam em três colunas.</p>
+            <figure>
+                <img src="imagens/wireframes.webp" alt="Wireframes da página inicial nas versões mobile e desktop, com cabeçalho com logo e menu, destaque com o nome Zero Desculpas e o botão Começar hoje, cartões de Hábitos, Treinos e Metas, e rodapé com ano, última modificação e referências" width="1448" height="1086" loading="lazy">
+                <figcaption>Wireframes mobile (à esquerda) e desktop (à direita).</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="anoatual"></span> | Júlio César Moreira Antunes | WDD 131</p>
+        <p>Última modificação: <span id="ultimaModificacao"></span></p>
+    </footer>
+</body>
+</html>

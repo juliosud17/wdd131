@@ -1,0 +1,144 @@
+:root {
+    --fundo: #0f0f0f;
+    --superficie: #1a1a1a;
+    --texto: #ffffff;
+    --texto-secundario: #9ca3af;
+    --verde: #10b981;
+    --vermelho: #ef4444;
+    --laranja: #f97316;
+    --fonte-titulo: "Oswald", sans-serif;
+    --fonte-corpo: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: var(--fonte-corpo);
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--verde);
+}
+
+.rotulo {
+    margin: 0;
+    color: var(--texto-secundario);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--superficie);
+    border-radius: 12px;
+}
+
+.destaque {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    color: var(--laranja);
+}
+
+.cores {
+    padding: 0;
+    list-style: none;
+}
+
+.cores li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+code {
+    color: var(--texto-secundario);
+}
+
+.amostra {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--texto-secundario);
+    border-radius: 6px;
+}
+
+.fundo { background-color: var(--fundo); }
+.superficie { background-color: var(--superficie); }
+.texto { background-color: var(--texto); }
+.secundario { background-color: var(--texto-secundario); }
+.verde { background-color: var(--verde); }
+.vermelho { background-color: var(--vermelho); }
+.laranja { background-color: var(--laranja); }
+
+.fonte {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--vermelho);
+}
+
+.fonte p {
+    margin: 0;
+}
+
+.exemplo-oswald {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.exemplo-inter {
+    font-family: var(--fonte-corpo);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+footer {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    text-align: center;
+}
