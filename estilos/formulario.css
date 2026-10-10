@@ -1,0 +1,304 @@
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background-color: #30052e;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+main {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 0 12px;
+}
+
+form {
+    background-color: #d9d2d9;
+    padding: 24px;
+    border: 1px solid #bdb5bd;
+    border-radius: 8px;
+}
+
+/* Espaçamento entre campos */
+
+.campo {
+    margin-bottom: 28px;
+}
+
+/* Títulos dos campos */
+
+.campo > label,
+.campo > legend {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   SELECT E INPUTS
+========================= */
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 14px 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #111111;
+    border: 1px solid #aaa2ad;
+    border-radius: 3px;
+}
+
+select,
+input[type="date"],
+input[type="text"] {
+    min-height: 48px;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Destaque ao selecionar um campo */
+
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #69366c;
+    outline-offset: 2px;
+}
+
+/* =========================
+   FIELDSET
+========================= */
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 0;
+}
+
+/* =========================
+   CLASSIFICAÇÃO COM ESTRELAS
+========================= */
+
+.classificacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.classificacao label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1;
+    font-size: 1.15rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.classificacao input[type="radio"] {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    accent-color: #55205d;
+    cursor: pointer;
+}
+
+/* =========================
+   RECURSOS ÚTEIS
+========================= */
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.opcao input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    accent-color: #55205d;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.opcao label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* =========================
+   BOTÃO DE ENVIO
+========================= */
+
+input[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    margin-top: 12px;
+    background-color: #eeeaf0;
+    color: #111111;
+    border: 1px solid #938897;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #c9bacd;
+}
+
+input[type="submit"]:active {
+    background-color: #b5a1ba;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #30052e;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 15px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .classificacao {
+        gap: 2px;
+    }
+
+    .classificacao label {
+        font-size: 0.95rem;
+    }
+
+    .classificacao input[type="radio"] {
+        width: 24px;
+        height: 24px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* =========================
+   PÁGINA DE CONFIRMAÇÃO
+========================= */
+
+.confirmacao {
+    background-color: #d9d2d9;
+    padding: 40px 24px;
+    border: 1px solid #bdb5bd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirmacao h2 {
+    font-size: 1.6rem;
+    color: #30052e;
+    margin-top: 0;
+}
+
+.confirmacao p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.confirmacao strong {
+    font-size: 1.4rem;
+    color: #55205d;
+}
+
+.confirmacao a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: #30052e;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.confirmacao a:hover {
+    background-color: #55205d;
+}
+
+.confirmacao a:focus-visible {
+    outline: 3px solid #55205d;
+    outline-offset: 3px;
+}
